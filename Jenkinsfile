@@ -23,7 +23,16 @@ node {
     stage('Maven build') {
         buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean install'
     }
-
+	
+    stage('Test') {
+            steps {
+                echo 'Testing..'
+				git branch: '*/master', url: 'https://github.com/chama1218/WebApp.git'
+				
+				bat "mvn verify"
+            }
+        }
+			
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
     }
