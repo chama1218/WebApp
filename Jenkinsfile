@@ -27,5 +27,10 @@ node {
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
     }
+	stage ('Slack') {
+        // send build started notifications
+       // slackSend (color: '#FFFF00')
+	  slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")  
+      }
     }
 	 
