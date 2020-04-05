@@ -79,9 +79,9 @@ public class ftat {
 		driver.findElement(By.name("problemdescription")).sendKeys("Increase Bandwidth");
 		driver.findElement(By.name("contact")).sendKeys("Arun");
 		driver.findElement(By.name("date")).sendKeys("03/03/2017");
-		driver.findElement(By.xpath("//button[text()='Submit']")).click();
+		/*driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//h2[text()='Repair Ticket Page']")).isDisplayed();
+		driver.findElement(By.xpath("//h2[text()='Repair Ticket Page']")).isDisplayed(); */
 	}
 
 	@Test(priority = 3)
@@ -92,9 +92,9 @@ public class ftat {
 		driver.get(URL1);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//font[text()='Create Repair Ticket']")).isDisplayed();
-		driver.findElement(By.xpath("//button[text()='Cancel']")).click();
+		/*driver.findElement(By.xpath("//button[text()='Cancel']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//h2[text()='Repair Ticket Page']")).isDisplayed();
+		driver.findElement(By.xpath("//h2[text()='Repair Ticket Page']")).isDisplayed();*/
 	}
 
 	@Test(priority = 4)
@@ -106,9 +106,9 @@ public class ftat {
 		driver.findElement(By.name("userpassword")).sendKeys("guest");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElement(By.partialLinkText("Logout")).click();
+		/*driver.findElement(By.partialLinkText("Logout")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
+		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();*/
 		driver.quit();
 	}
 
