@@ -99,7 +99,8 @@ public class ftat {
 
 	@Test(priority = 4)
 	public void logouttest() {
-		driver.findElement(By.partialLinkText("Logout")).click();
+		//driver.findElement(By.partialLinkText("Logout")).click();
+		driver.findElement(By.xpath("//button[text()='Logout']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//h1[text()='MARS COMMUNICATION']")).isDisplayed();
 		driver.findElement(By.name("username")).sendKeys("guest");
