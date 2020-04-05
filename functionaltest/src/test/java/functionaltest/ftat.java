@@ -68,8 +68,8 @@ public class ftat {
 
 	@Test(priority = 2)
 	public void createrepairticket() {
-		driver.findElement(By.className("btn")).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.findElement(By.className("btn")).click();
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//font[text()='Create Repair Ticket']")).isDisplayed();
 		Select proddd = new Select(driver.findElement(By.name("product")));
 		proddd.selectByValue("BROADBAND");
@@ -86,8 +86,8 @@ public class ftat {
 
 	@Test(priority = 3)
 	public void pageredirection() {
-		driver.findElement(By.partialLinkText("Home")).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	//	driver.findElement(By.partialLinkText("Home")).click();
+	//	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//h2[text()='WELCOME TO YOUR ACCOUNT OVERVIEW']")).isDisplayed();
 		driver.get(URL1);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -99,8 +99,8 @@ public class ftat {
 
 	@Test(priority = 4)
 	public void logouttest() {
-		driver.findElement(By.partialLinkText("Logout")).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.findElement(By.partialLinkText("Logout")).click();
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
 		driver.findElement(By.name("username")).sendKeys("guest");
 		driver.findElement(By.name("userpassword")).sendKeys("guest");
