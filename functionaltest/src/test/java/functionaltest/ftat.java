@@ -89,9 +89,6 @@ public class ftat {
 	//	driver.findElement(By.partialLinkText("Home")).click();
 	//	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	//	driver.findElement(By.xpath("//h2[text()='WELCOME TO YOUR ACCOUNT OVERVIEW']")).isDisplayed();
-		WebElement welcome = wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//h2[text()='WELCOME TO YOUR ACCOUNT OVERVIEW']")));
-		welcome.isDisplayed();
 		driver.get(URL1);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//font[text()='Create Repair Ticket']")).isDisplayed();
