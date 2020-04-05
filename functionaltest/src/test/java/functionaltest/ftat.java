@@ -99,7 +99,7 @@ public class ftat {
 
 	@Test(priority = 4)
 	public void logouttest() {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+/*		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.partialLinkText("Logout")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//h1[text()='MARS COMMUNICATION']")).isDisplayed();
@@ -107,9 +107,9 @@ public class ftat {
 		driver.findElement(By.name("userpassword")).sendKeys("guest");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		/*driver.findElement(By.partialLinkText("Logout")).click();
+		driver.findElement(By.partialLinkText("Logout")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();*/
+		driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();*/
 		driver.quit();
 	}
 
