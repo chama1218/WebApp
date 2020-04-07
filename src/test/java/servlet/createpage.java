@@ -25,7 +25,7 @@ public class createpage extends HttpServlet {
 			Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
 			Statement statement = connection.createStatement();
 			
-			String a=req.getParameter("product");
+			String a=req.getParameter("product")
 			String b=req.getParameter("problemdescription");
 			String c=req.getParameter("contact");
 			String d=req.getParameter("date");
